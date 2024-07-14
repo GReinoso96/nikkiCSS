@@ -1,3 +1,5 @@
+/* Colors */
+
 :root {
     --main-bg: rgb(26, 26, 26);
     --sidebar-bg: #1F1F1F;
@@ -22,6 +24,8 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
 }
+
+/* Sidebar Stuff */
 
 .sidebar {
     background-color: var(--sidebar-bg);
@@ -50,23 +54,7 @@ body {
     border-left: 3px solid var(--accent-col);
 }
 
-input[type=text] {
-    color: var(--text-col-2);
-    background-color: var(--input-col);
-    border: 3px solid var(--text-col-2);
-    text-decoration: none;
-    line-height: 36px;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-top: 10px;
-    padding-left: 12px;
-    font-size: large;
-    transition: 0.1s;
-}
-
-input[type=text]:hover {
-    border: 3px solid var(--accent-col);
-}
+/* Content Stuff */
 
 .main {
     width: 724px;
@@ -88,3 +76,90 @@ section p {
     text-align: justify;
     font-weight: lighter;
 }
+
+.fixedbtn {
+    display: none;
+    background-color: var(--accent-col);
+    color: var(--text-col-1);
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+
+/* Input Stuff */
+
+input {
+    height: 36px;
+}
+
+input[type=text] {
+    color: var(--text-col-2);
+    background-color: var(--input-col);
+    border: 3px solid var(--text-col-2);
+    text-decoration: none;
+    line-height: 36px;
+    padding-left: 12px;
+    font-size: large;
+    transition: 0.1s;
+}
+
+input[type=text]:hover {
+    border: 3px solid var(--accent-col);
+}
+
+.sidebar input {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 10px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+}
+
+.group label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+.group-hor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group-hor label {
+    padding-left: 8px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Thin Screens */
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+
+    .mobilesbar {
+        display: flex;
+      width: 100%;
+      position: fixed;
+    }
+
+    .fixedbtn {
+        display: block;
+    }
+
+    .main {
+        padding: 24px;
+    }
+  }
