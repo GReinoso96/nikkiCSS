@@ -1,0 +1,1 @@
+Simple CSS template with no real frills, meant for quick and dirty static pages.

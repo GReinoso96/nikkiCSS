@@ -1,0 +1,90 @@
+:root {
+    --main-bg: rgb(26, 26, 26);
+    --sidebar-bg: #1F1F1F;
+    --sidebar-item-bg: #353535;
+    --text-col-1: white;
+    --text-col-2: gray;
+    --accent-col: rgb(67, 131, 252);
+    --input-col: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text-col-1);
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--text-col-1);
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: var(--text-col-1);
+    text-decoration: none;
+    line-height: 48px;
+    padding-left: 32px;
+    margin-top: 10px;
+    font-size: large;
+    transition: 0.1s;
+    border: 0px solid var(--accent-col);
+}
+
+.sidebar a:hover {
+    background-color: var(--sidebar-item-bg);
+    padding-left: 40px;
+    border-left: 3px solid var(--accent-col);
+}
+
+input[type=text] {
+    color: var(--text-col-2);
+    background-color: var(--input-col);
+    border: 3px solid var(--text-col-2);
+    text-decoration: none;
+    line-height: 36px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 10px;
+    padding-left: 12px;
+    font-size: large;
+    transition: 0.1s;
+}
+
+input[type=text]:hover {
+    border: 3px solid var(--accent-col);
+}
+
+.main {
+    width: 724px;
+    color: var(--text-col-1);
+    padding: 50px;
+}
+
+section h1, section h2, section h3, section h4 {
+    font-weight: 100;
+    margin: auto;
+}
+
+section h1 {
+    font-size: xx-large;
+}
+
+section p {
+    line-height: 1.4rem;
+    text-align: justify;
+    font-weight: lighter;
+}
