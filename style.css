@@ -6,6 +6,7 @@
     --sidebar-item-bg: #353535;
     --text-col-1: white;
     --text-col-2: gray;
+    --text-col-3: black;
     --accent-col: rgb(67, 131, 252);
     --accent-sub: rgb(28, 72, 153);
     --input-col: white;
@@ -83,6 +84,12 @@ section p {
     font-weight: lighter;
 }
 
+section ul {
+    padding-left: 32px;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
 .fixedbtn {
     display: none;
     background-color: var(--accent-col);
@@ -115,6 +122,7 @@ input[type=text] {
     font-size: large;
     transition: 0.1s;
     width: 26rem;
+    max-width: 85vw;
     box-sizing: border-box;
 }
 
@@ -132,7 +140,7 @@ input[type=text]:hover {
 }
 
 select {
-    color: var(--text-col-2);
+    color: var(--text-col-3);
     background-color: var(--input-col);
     border: 3px solid var(--text-col-2);
     text-decoration: none;
@@ -141,6 +149,7 @@ select {
     font-size: large;
     cursor: pointer;
     width: 26rem;
+    max-width: 85vw;
 }
 
 .group {
@@ -178,8 +187,10 @@ button {
     padding: 18px;
     font-size: large;
     border: 0px;
-    transition: 0.2s;
+    transition: background-color 0.2s;
     cursor: pointer;
+    margin-top: 1.2rem;
+    max-width: 85vw;
 }
 
 button:hover {
@@ -212,7 +223,6 @@ button:hover {
     }
 
     button {
-        display: block;
         width: 100%;
     }
   }
